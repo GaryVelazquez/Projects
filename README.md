@@ -1,7 +1,7 @@
-Sercurity Audit
+Scope, goals, and risk assessment report
 Objective
 
-The Sercurity Audit project aimed to establish a controlled environment for simulating and detecting CIAtriad, SIEM and NIST CFS, OWASP princpiles knowledge. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world possible attack and weaknesses scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
+The Sercurity Audit project aimed to establish a controlled environment for simulating CIAtriad, SIEM and NIST CFS, OWASP princpiles knowledge. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world possible attack and weaknesses scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
 Skills Learned
 
 Advanced understanding of SIEM concepts and practical application.
