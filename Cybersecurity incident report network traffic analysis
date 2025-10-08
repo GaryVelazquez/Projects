@@ -1,0 +1,18 @@
+<h1> Cybersecurity incident report traffic analysis project </h1>
+
+This project demonstrates how to analyze network traffic using tcpdump to identify issues with DNS resolution. 
+The captured logs reveal a problem where DNS queries fail when attempting to resolve the domain yummyrecipesforme.com.
+
+Problem Description
+
+The client machine (192.51.100.15) repeatedly attempts to contact the DNS server (203.0.113.2) using the UDP protocol on port 53 (the standard port for DNS lookups).
+Each request results in an ICMP "Port Unreachable" response, which indicates that the DNS server is not processing queries correctly.
+
+**Error Message Log (tcpdump output)**
+<img src="./7f2e9d1c-eb55-435b-bfd8-bf811c589436.png" alt="Error Message" width="600" />
+
+2. **Cybersecurity Incident Report – Part 1**
+<img src="./a3b5a339-843a-481a-acf5-02718eb5f5be.png" alt="Incident Report Part 1" width="600 />
+
+3. **Cybersecurity Incident Report – Part 2**
+<img src="./794b69e9-f31c-419c-a281-823bc437f591.png" alt="Incident Report Part 2" width="600 />
