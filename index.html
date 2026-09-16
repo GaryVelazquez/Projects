@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery - Home</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="bakery-logo_c.png" alt="North Star Bakery logo showing a bread loaf with a wheat stalk" width="150">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact & Pre-Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Welcome to North Star Bakery</h1>
+      <p>Your neighborhood bakery crafting handmade breads, pastries, and treats fresh every morning with warm, wholesome ingredients.</p>
+      
+      <!-- Audio Element with Fallback Text & Exact Transcript -->
+      <p>Listen to a welcome message from our head baker:</p>
+      <audio controls>
+        <source src="bakery-welcome_c.mp3" type="audio/mpeg">
+        <p>Your browser does not support the audio element. Please download <a href="bakery-welcome_c.mp3">bakery-welcome_c.mp3</a> to listen.</p>
+      </audio>
+      <blockquote>
+        <p><strong>Audio Transcript:</strong> "Here at North Star Bakery, every loaf starts before sunrise. We use simple ingredients, local grains, and time—because good bread can't be rushed. Stop by and taste the difference, or place a pre-order and we'll have something fresh waiting for you."</p>
+      </blockquote>
+    </section>
+
+    <!-- Responsive Image using <picture> -->
+    <section>
+      <h2>Featured Item of the Week</h2>
+      <picture>
+        <source media="(min-width: 768px)" srcset="bakery-feature-large_c.png">
+        <img src="bakery-feature-small_c.png" alt="Assorted artisan cookies, pastries, and sweet baked treats displayed in bakery cases">
+      </picture>
+      <p><strong>Cinnamon Cardamom Knots:</strong> Perfectly spiced, buttery, and baked fresh daily every morning at 6:00 AM.</p>
+    </section>
+
+    <section>
+      <h2>What We're Known For</h2>
+      <ul>
+        <li><strong>Artisanal Sourdough:</strong> Naturally fermented overnight for crisp crusts and rich flavor.</li>
+        <li><strong>Handcrafted Pastries:</strong> Flaky croissants, morning buns, and seasonal fruit tarts.</li>
+        <li><strong>Community Focus:</strong> Locally sourced organic grains and partnerships with regional farms.</li>
+      </ul>
+    </section>
+
+    <!-- Figure Element with Caption -->
+    <section>
+      <h2>Our Signature Loaf</h2>
+      <figure>
+        <img src="bakery-signature-loaf_c.png" alt="A freshly baked round artisan bread loaf held in a light linen cloth">
+        <figcaption>The North Star Signature Sourdough Loaf — naturally leavened over 36 hours for exceptional texture and taste.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Hours & Location</h2>
+      <p><strong>Address:</strong> 123 Main Street, Neighborhood District</p>
+      <p><strong>Hours:</strong> Tuesday – Sunday: 6:30 AM – 3:00 PM (Closed Mondays)</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 North Star Bakery. Created by Gary V. WGU Student -  All rights reserved.</p>
+  </footer>
+</body>
+</html>
