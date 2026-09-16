@@ -1,19 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
+  const fullNameInput = document.getElementById("full-name");
   const emailInput = document.getElementById("email");
   const dateInput = document.getElementById("pickup-date");
 
   if (form) {
     form.addEventListener("submit", function (event) {
-      // 1. ALWAYS prevent the page from redirecting to a 404 page
+      // Always prevent page redirect
       event.preventDefault();
 
-      // 2. Clear old error messages
+      // Clear existing error messages
       clearErrors();
 
       let isValid = true;
 
-      // 3. Email Validation Check
+      // 1. Full Name Validation (First and Last Name Required)
+      const fullNameValue = fullNameInput ? fullNameInput.value.trim() : "";
+      const nameRegex = /^[A-Za-z]+(?:\s+[A-Za-z]+)+$/;
+      if (!nameRegex.test(fullNameValue)) {
+        showError(fullNameInput, "Please enter both your first and last name.");
+        isValid = false;
+      }
+
+      // 2. Email Address Validation
       const emailValue = emailInput ? emailInput.value.trim() : "";
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(emailValue)) {
@@ -21,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         isValid = false;
       }
 
-      // 4. Future Date Validation Check
+      // 3. Future Pickup Date Validation
       if (dateInput) {
         const selectedDate = new Date(dateInput.value);
         const today = new Date();
@@ -33,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
 
-      // 5. If valid, process submission/storage
+      // 4. Success handling
       if (isValid) {
         alert("Pre-order request submitted successfully!");
       }
